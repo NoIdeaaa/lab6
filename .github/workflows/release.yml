@@ -21,9 +21,3 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade setuptools wheel
-
-      - name: Generate release tag
-        id: versioning
-        run: |
-          VERSION=$(date +'%Y.%m.%d') 
-          echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV  
